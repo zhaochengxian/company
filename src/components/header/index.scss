@@ -1,0 +1,36 @@
+@keyframes over {
+  0%,
+  100% {
+    transform: rotateY(90deg);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotateY(180deg);
+  }
+}
+
+.header {
+  height: px2rem(60px);
+  > div {
+    height: px2rem(60px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .navs {
+    display: flex;
+    font-size: px2rem(17px);
+    span {
+      display: inline-block;
+      margin-left: 116px;
+    }
+  }
+  img {
+    animation: over 4s infinite;
+    width: px2rem(30px);
+  }
+}

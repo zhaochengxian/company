@@ -1,0 +1,30 @@
+.advantage {
+  display: flex;
+  width: px2rem(1300px);
+  justify-content: space-between;
+  padding-bottom: px2rem(157px);
+  .item {
+    width: px2rem(416px);
+    text-align: center;
+    img {
+      height: px2rem(249px);
+      border-radius: px2rem(15px);
+      margin-bottom: px2rem(16px);
+    }
+    div {
+      &:nth-child(2) {
+        color: #0b033f;
+        font-size: px2rem(34px);
+        font-family: PingFangSC-Medium;
+        margin-bottom: px2rem(20px);
+      }
+      &:nth-child(3) {
+        font-family: PingFangSC-Regular;
+        color: #717f6b;
+        font-size: px2rem(17px);
+        line-height: px2rem(40px);
+        height: px2rem(40px);
+      }
+    }
+  }
+}

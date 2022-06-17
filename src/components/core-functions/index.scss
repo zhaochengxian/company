@@ -1,0 +1,97 @@
+.core-functions {
+  background: #f9fafb;
+  padding: px2rem(107px) 0 px2rem(60px) 0;
+  position: relative;
+  height: px2rem(1000px);
+  .title {
+    font-family: PingFangSC-Medium;
+    font-size: px2rem(48px);
+    color: #262729;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: px2rem(40px);
+      margin-right: 20px;
+    }
+  }
+  .cricle {
+    width: px2rem(673px);
+    height: px2rem(673px);
+    border-radius: px2rem(673px);
+    background: linear-gradient(
+      180deg,
+      #d6ebe4 0%,
+      #d6ebe4 0%,
+      #ffffff 99%,
+      #ffffff 99%
+    );
+    position: absolute;
+    top: px2rem(230px);
+    left: calc(50vw - px2rem(336px));
+    z-index: 2;
+  }
+  .swiper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: calc(50vw - px2rem(650px));
+    z-index: 4;
+    .swiper-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      &:hover {
+        opacity: 0.7;
+        transform: scale(1.1);
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+    }
+    .core-functions-list {
+      margin: 0 50px 0 50px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .item {
+        img {
+          width: px2rem(300px);
+          margin: px2rem(126px) 0 px2rem(44px) 0;
+        }
+        div {
+          color: #26272a;
+          font-family: PingFangSC-Medium;
+          font-size: px2rem(34px);
+          text-align: center;
+        }
+        .swiper-dots {
+          width: px2rem(88px);
+          height: px2rem(8px);
+          background: #ededed;
+          margin: 0 auto;
+          margin-top: px2rem(49px);
+          position: relative;
+          span {
+            position: absolute;
+            top: 0;
+            z-index: 3;
+            display: inline-block;
+            &:nth-child(1) {
+              width: px2rem(44px);
+              height: px2rem(8px);
+              background: #000000;
+              left: 0;
+            }
+            &:nth-child(2) {
+              width: px2rem(44px);
+              height: px2rem(8px);
+              background: #ededed;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
